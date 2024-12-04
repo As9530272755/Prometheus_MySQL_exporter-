@@ -1,0 +1,83 @@
+exporter:
+  port: 9120
+# wjdev
+# boss:
+#   zone: "bjdev"
+#   host: "boss.qcloud.cicc.com.cn"
+#   boss_port: 80
+#   protocol: "http"
+#   access_key: "EWBEQTAIMRVUOLGYEBWI"
+#   secret_key: "Wc0nymcHaxqMy7P8AU2aUaujBieo5AAFEeDrr1Zg"
+
+# wjbjprd
+# boss:
+#   zone: "bjprd"
+#   host: "boss.qcloud.cicc.com.cn"
+#   boss_port: 80
+#   protocol: "http"
+#   access_key: "EWBEQTAIMRVUOLGYEBWI"
+#   secret_key: "Wc0nymcHaxqMy7P8AU2aUaujBieo5AAFEeDrr1Zg"
+
+# wjbjdmz1
+# boss:
+  # zone: "bjdmzwj1"
+  # host: "boss.qcloud.cicc.com.cn"
+  # boss_port: 80
+  # protocol: "http"
+  # access_key: "EWBEQTAIMRVUOLGYEBWI"
+  # secret_key: "Wc0nymcHaxqMy7P8AU2aUaujBieo5AAFEeDrr1Zg"
+
+# zjdev
+# boss:
+  # zone: "bjdevzj"
+  # host: "boss.devccloud.cicc.com.cn"
+  # boss_port: 80
+  # protocol: "http"
+  # access_key: "ZBRICLITQGUCCQESLYEI"
+  # secret_key: "e3ShyaHvKqxJCFJTF5siaGAh2wTAEv1GDInTVMzZ"
+
+# bjxcdevzj
+# boss:
+  # zone: "bjxcdevzj"
+  # host: "boss.devccloud.cicc.com.cn"
+  # boss_port: 80
+  # protocol: "http"
+  # access_key: "ZBRICLITQGUCCQESLYEI"
+  # secret_key: "e3ShyaHvKqxJCFJTF5siaGAh2wTAEv1GDInTVMzZ"
+
+# bjprdzj
+# boss:
+  # zone: "bjprdzj"
+  # host: "boss.ccloud.cicc.com.cn"
+  # boss_port: 80
+  # protocol: "http"
+  # access_key: "QEUFUUSRZHBCWGQRMWMI"
+  # secret_key: "aIx5vQERFIpvLeFJcLxjlXLyf6a9kQcw1mzsoDp5"
+
+# bjxcprdzj
+# boss:
+#   zone: "bjxcprdzj"
+#   host: "boss.ccloud.cicc.com.cn"
+#   boss_port: 80
+#   protocol: "http"
+#   access_key: "QEUFUUSRZHBCWGQRMWMI"
+#   secret_key: "aIx5vQERFIpvLeFJcLxjlXLyf6a9kQcw1mzsoDp5"
+
+# bjdmzzj
+# boss:
+  # zone: "bjdmzzj"
+  # host: "boss.ccloud.cicc.com.cn"
+  # boss_port: 80
+  # protocol: "http"
+  # access_key: "QEUFUUSRZHBCWGQRMWMI"
+  # secret_key: "aIx5vQERFIpvLeFJcLxjlXLyf6a9kQcw1mzsoDp5"
+
+
+# bjxcdmzzj
+# boss:
+  # zone: "bjxcdmzzj"
+  # host: "boss.ccloud.cicc.com.cn"
+  # boss_port: 80
+  # protocol: "http"
+  # access_key: "QEUFUUSRZHBCWGQRMWMI"
+  # secret_key: "aIx5vQERFIpvLeFJcLxjlXLyf6a9kQcw1mzsoDp5"
