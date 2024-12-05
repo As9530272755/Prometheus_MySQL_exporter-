@@ -1,0 +1,21 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    app.kubernetes.io/vendor: kubesphere
+    app: lb-exporter
+  name: lb-exporter
+  namespace: kubesphere-monitoring-system
+spec:
+  namespaceSelector:
+    matchNames:
+    - test-vm
+  # selector 字段中匹配 endpoint 的标签
+  selector:
+    matchLabels:
+      app: lb-exporter
+  endpoints:
+  - interval: 1m
+    port: metrics       # 匹配 svc port 名称
+    path: /metrics      # 匹配监控指标路径
+  jobLabel: app
