@@ -1,0 +1,13 @@
+# Service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: lb-exporter-service
+spec:
+  selector:
+    app: lb-exporter
+  ports:
+    - protocol: TCP
+      port: 9120
+      targetPort: 9120
+  type: NodePort

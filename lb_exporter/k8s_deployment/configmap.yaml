@@ -1,0 +1,18 @@
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lb-exporter-config
+data:
+  config.yaml: |
+    # exporter 前端端口
+    exporter:
+      port: 9120
+    # 链接 boss 登录方式
+    boss:
+      zone: "xxx"
+      host: "boss.xxx.xxx.com.cn"
+      boss_port: 80
+      protocol: "http"
+      access_key: "xxxx"
+      secret_key: "xxx"

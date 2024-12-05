@@ -1,0 +1,41 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lb-exporter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lb-exporter
+  template:
+    metadata:
+      labels:
+        app: lb-exporter
+    spec:
+    # 实现给 pod 添加主机头
+      hostAliases:
+      - ip: "xxx.xxx.xxx"
+        hostnames:
+        - "boss.xxx.xxx.com.cn"
+      containers:
+      - name: lb-exporter
+        image: lb_exporter:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9120
+        resources:
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        volumeMounts:
+        - name: config-volume
+          mountPath: /root/config.yaml
+          subPath: config.yaml
+      volumes:
+      - name: config-volume
+        configMap:
+          name: lb-exporter-config
