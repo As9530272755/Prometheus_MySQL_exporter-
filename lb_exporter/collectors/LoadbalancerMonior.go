@@ -56,7 +56,7 @@ func ListenerMetrics(wg *sync.WaitGroup, stopChan <-chan struct{}) {
 	defer wg.Done()
 
 	// 10M 更新一次 API,创建了一个定时器 ticker，每隔 10 M触发一次
-	ticker := time.NewTicker(30 * time.Second)
+	ticker := time.NewTicker(5 * time.Minute)
 	defer ticker.Stop()
 
 	for {
