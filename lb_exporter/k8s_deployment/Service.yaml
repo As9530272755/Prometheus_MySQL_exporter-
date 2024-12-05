@@ -1,13 +1,16 @@
-# Service.yaml
 apiVersion: v1
 kind: Service
 metadata:
-  name: lb-exporter-service
+  labels:
+    # 用于给 endpoint 实现标签绑定
+    app: lb-exporter
+  name: lb-exporter
+  namespace: test-vm
 spec:
   selector:
     app: lb-exporter
   ports:
-    - protocol: TCP
-      port: 9120
-      targetPort: 9120
-  type: NodePort
+  - name: metrics
+    protocol: TCP
+    port: 9120
+    targetPort: 9120
